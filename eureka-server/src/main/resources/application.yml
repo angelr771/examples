@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    include: native, default, DEV, uat, activemq
+server:
+  port: 8761
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+vcap:
+  services:
+    eurekaURL:
+      credentials:
+        uri:
+          user: usere
+          password: passworde

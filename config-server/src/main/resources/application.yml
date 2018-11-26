@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    include:
+    - LOCAL
+  cloud:
+    config:
+      discovery:
+        enabled: false
+      server:
+        git:
+          uri: c:/dev/config-repo
+server:
+  port: 8888          
